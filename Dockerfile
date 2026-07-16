@@ -1,3 +1,13 @@
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  packages: write
+
+  
 FROM node:alpine3.22
 
 WORKDIR /tmp
